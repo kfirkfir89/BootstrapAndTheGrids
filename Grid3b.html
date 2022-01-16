@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>Bootstrap And The Grids: Grid 5</title>
+    <title>Bootstrap And The Grids: Grid 3B</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -36,13 +36,13 @@
                     <a class="nav-link" href="/Grid2.html">Grid 2</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Grid3.html">Grid 3</a>
+                    <a class="nav-link active" aria-current="page" href="/Grid3.html">Grid 3</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/Grid4.html">Grid 4</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/Grid5.html">Grid 5</a>
+                    <a class="nav-link" href="/Grid5.html">Grid 5</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/Grid6.html">Grid 6</a>
@@ -62,27 +62,45 @@
 </nav>
 
     <main class="flex-shrink-0">
-        <div class="container h-100 minHeight">
-            <div class="row h-100 row-cols-1 row-cols-md-3 gy-1">
-                <div class="col col-md-3 order-last order-md-first">
-                    <div class="bg-secondary text-light h-100 p-2">
-                        <h5>COL ONE</h5>
-                        order-last order-md-first
-                    </div>
-                </div>
-                <div class="col col-md-6">
-                    <div class="bg-dark text-light h-100 p-2">
-                        <h5>COL TWO</h5>
-                    </div>
-                </div>
-                <div class="col col-md-3 order-first order-md-last">
-                    <div class="bg-secondary text-light h-100 p-2">
-                        <h5>COL THREE</h5>
-                        order-first order-md-last
-                    </div>
-                </div>
-            </div>
-        </div>
+       <div class="container h-100 minHeight">
+           <ul class="nav nav-pills mb-1">
+               <li class="nav item">
+                   <a href="Grid3.html" class="nav-link">Grid 3A</a>
+                   <a href="Grid3b.html" class="nav-link active" aria-current="page">Grid 3B</a>
+                </li>
+               
+           </ul>
+           <div class="row h-100 g-2">
+               <!--LEFT COLUMN-->
+               <div class="col-7">
+                   <div class="bg-secondary text-light p-2 h-100">
+                       <h1>Article Title</h1>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sed sapiente placeat pariatur, blanditiis nisi voluptate necessitatibus eum eveniet vitae modi commodi suscipit aliquam unde quas? Eum autem ipsa placeat.</p>
+                   </div>
+               </div>
+               <!--RIGHT COLUMN-->
+               <div class="col-5">
+                   <!--RIGHT TOP COLUMN-->
+                   <div class="bg-secondary text-light p-2 ">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="search" aria-label="search">
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
+                   </div>
+                   <!--LEFT BOTTOM COLUMN-->
+                   <div class="bg-dark text-light mt-2 p-2">
+                        <h5>More Articles</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Article One</a>
+                                <a class="nav-link" href="#">Article Two</a>
+                                <a class="nav-link" href="#">Article Three</a>
+                            </li>
+                        </ul>
+                   </div>
+               </div>
+           </div>
+       </div>
     </main>
     <footer class="footer mt-auto py-3 bg-dark sticky-footer">
         <div class="container-fluid text-center">

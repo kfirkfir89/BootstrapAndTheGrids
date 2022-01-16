@@ -3,6 +3,15 @@ main>.container {
 
 }
 
+body> main{
+    margin-top:20px ;
+    margin-bottom: 80px;
+}
+
+main>.container-fluid{
+    padding-top: 60px;
+}
+
 .homeBG {
     width: 100%;
     background: url("/img/GridBG.png");
@@ -17,4 +26,8 @@ main>.container {
     font-weight: 400;
     font-style: normal;
     color: rgb(195, 255, 0);
+}
+
+.minHeight{
+    min-height: 80vh;
 }
